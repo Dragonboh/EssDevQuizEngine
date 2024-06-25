@@ -10,6 +10,8 @@
 		847853422C2B27B7006640EB /* EssDevQuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847853392C2B27B7006640EB /* EssDevQuizEngine.framework */; };
 		847853472C2B27B7006640EB /* EssDevQuizEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847853462C2B27B7006640EB /* EssDevQuizEngineTests.swift */; };
 		847853482C2B27B7006640EB /* EssDevQuizEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8478533C2C2B27B7006640EB /* EssDevQuizEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		847853522C2B2866006640EB /* FlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847853512C2B2866006640EB /* FlowTest.swift */; };
+		847853542C2B29DE006640EB /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847853532C2B29DE006640EB /* Flow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 		8478533C2C2B27B7006640EB /* EssDevQuizEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssDevQuizEngine.h; sourceTree = "<group>"; };
 		847853412C2B27B7006640EB /* EssDevQuizEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssDevQuizEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847853462C2B27B7006640EB /* EssDevQuizEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssDevQuizEngineTests.swift; sourceTree = "<group>"; };
+		847853512C2B2866006640EB /* FlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTest.swift; sourceTree = "<group>"; };
+		847853532C2B29DE006640EB /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				8478533C2C2B27B7006640EB /* EssDevQuizEngine.h */,
+				847853532C2B29DE006640EB /* Flow.swift */,
 			);
 			path = EssDevQuizEngine;
 			sourceTree = "<group>";
@@ -78,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				847853462C2B27B7006640EB /* EssDevQuizEngineTests.swift */,
+				847853512C2B2866006640EB /* FlowTest.swift */,
 			);
 			path = EssDevQuizEngineTests;
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 				TargetAttributes = {
 					847853382C2B27B7006640EB = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 					};
 					847853402C2B27B7006640EB = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -191,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847853542C2B29DE006640EB /* Flow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847853472C2B27B7006640EB /* EssDevQuizEngineTests.swift in Sources */,
+				847853522C2B2866006640EB /* FlowTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		8478534C2C2B27B7006640EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -364,6 +374,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -371,6 +382,7 @@
 		8478534D2C2B27B7006640EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -402,6 +414,7 @@
 		8478534F2C2B27B7006640EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9WPKFQ65J6;
@@ -417,6 +430,7 @@
 		847853502C2B27B7006640EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9WPKFQ65J6;
